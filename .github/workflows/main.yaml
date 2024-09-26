@@ -21,8 +21,8 @@ jobs:
           # passphrase: ${{ secrets.SSH_PASSPHRASE }} # Your server's SSH passphrase if applicable
 
           script: |
-            cd home/react-staging/cac-socialprotection/
-            git config --global --add safe.directory home/react-staging/cac-socialprotection/
+            cd /home/react-staging/cac-socialprotection/
+            git config --global --add safe.directory /home/react-staging/cac-socialprotection/
             sudo git pull origin main
             sudo npm install
             sudo npm run build
